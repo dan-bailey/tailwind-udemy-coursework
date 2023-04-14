@@ -5,26 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <title>Typography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif ['ui-serif', 'Georgia'],
+            mono: ['ui-mono']
+          },
+        },
+      }
+    </script>
   </head>
   <body>
     <!-- Font Family -->
-
+    <div class="font-sans">Default is sans</div>
+    <div class="font-serif">Meh</div>
+    <div class="font-[Silkscreen] text-8xl">MIAMI VICE</div>
     <!-- Font Size -->
-
+    <div class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+    <div class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing.</div>
+    <div class="text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+    <div class="text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+    <div class="text-3xl">Lorem ipsum dolor, sit amet consectetur adipisicing.</div>
+    <div class="text-4xl">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
     <!-- Font Weight -->
-
+    <div class="text-xl font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+    <div class="text-xl font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="text-xl font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="text-xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="text-xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
     <!-- Letter Spacing -->
+    <div class="tracking-tighter">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="tracking-normal">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="tracking-widest">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
 
     <!-- Text Alignment -->
-
+    <div class="text-left">Left</div>
+    <div class="text-right">Right</div>
+    <div class="text-center">Center</div>
     <!-- Text Decoration -->
-
+    <div class="underline decoration-4 decoration-blue-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ullam. Velit, cum!</div>
+    <div class="underline decoration-dotted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, repudiandae.</div>
+    <div class="underline decoration-dashed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, repudiandae.</div>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, repudiandae.</div>
     <!-- Decoration Style -->
-
+    <div class="underline decoration-wavy decoration-red-500 underline-offset-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas dolorum deserunt.</div>
     <!-- Decoration Offset -->
-
+    <div class="underline decoration-wavy decoration-red-500 underline-offset-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis.</div>
     <!-- Text Transform -->
+    <p class="normal-case">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugit ex, consequuntur atque saepe facilis similique reiciendis quod, voluptates sed harum aliquid!</p>
+    <p class="upper-case">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quas cum quos tenetur!</p>
+    <p class="lower-case">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p class="capitalize">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora a, odit blanditiis alias commodi rerum error debitis voluptas minima aspernatur impedit consectetur?</p>
   </body>
 </html>
 
