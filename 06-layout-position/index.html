@@ -9,28 +9,61 @@
   </head>
   <body>
     <!-- Positioning -->
-
+    <div class="relative h-12 bg-red-200 w-1/2 p-2">
+      <p>Parent Element</p>
+      <div class="absolute bottom-2 right-2 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
     <!-- Top left corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Top right corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Bottom left corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Bottom right corner -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Span top edge -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300"></div>
+    </div>
     <!-- Span left edge -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 inset-y-0 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Span right edge -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 inset-y-0 w-16 bg-yellow-300"></div>
+    </div>
     <!-- Span bottom edge -->
-
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300"></div>
+    </div>
     <!-- Display Classes -->
-
+    <div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi culpa debitis qui neque iure <span class="inline font-bold">THIS IS INLINE </span>itaque labore officia aliquid nostrum dolores! Quia numquam, consequatur, unde voluptates tempore <span class="inline-block font-bold">THIS IS INLINE BLOCK </span>quibusdam ad nam corporis magni non voluptatum quod ipsa. Sequi corporis <span class="block font-bold">THIS IS BLOCK</span>possimus impedit dolor eaque libero nihil eos suscipit quibusdam nemo! Nihil nam maiores repellat architecto hic! <span class="hidden font-bold">THIS IS HIDDEN </span>Ipsam incidunt eius ex doloremque. Id, illo!
+    </div>
     <!-- Z-Index -->
-
+    <div class="relative h-36 bg-gray-100 w-screen my-4">
+      <div class="absolute w-24 left-10 h-24 bg-blue-500 z-40">1</div>
+      <div class="absolute w-24 left-20 h-24 bg-blue-400">2</div>
+      <div class="absolute w-24 left-40 h-24 bg-blue-300 z-10">3</div>
+      <div class="absolute w-24 left-60 h-24 bg-blue-200 z-20">4</div>
+      <div class="absolute w-24 left-80 h-24 bg-blue-100 z-30">5</div>
+    </div>
     <!-- Floats -->
+    <div class="w-1/2">
+      <img class="h-48 w-48 ml-4 mb-4 float-right" src="../assets/img/img1.jpg" alt="" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione rerum atque impedit laboriosam facere. Nemo optio quia iusto, sapiente dolor vel a ullam dignissimos accusantium veniam facilis impedit? Sint ullam quasi sit voluptate a. Porro, eaque. Animi possimus enim, id doloremque, unde mollitia voluptatibus molestiae et fugiat minima error? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi atque fuga id natus ipsam maiores libero, earum, cum distinctio porro facilis ad unde minus esse fugiat molestias aliquid sed, dolorum ratione similique culpa ab repellat. Ea cum architecto culpa sequi atque vero, similique asperiores expedita facilis blanditiis quas cupiditate nihil esse, nostrum explicabo beatae vitae placeat quae tempore hic quaerat.</p>
+    </div>
   </body>
 </html>
 
