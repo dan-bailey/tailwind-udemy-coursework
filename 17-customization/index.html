@@ -8,10 +8,10 @@
     <title>Customization</title>
   </head>
  <body
-    class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
+    class="bg-black sm:bg-grey-100 md:bg-primary lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
   >
    
-      <h1 class="text-white text-xl"></h1>
+      <h1 class="text-white text-4xl"></h1>
 
     <script>
       function showBrowserWidth() {
@@ -22,6 +22,28 @@
 
       window.onload = showBrowserWidth
       window.onresize = showBrowserWidth
+    </script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: '600px',
+            md: '800px',
+            lg: '1200px',
+            xl: '1440px'
+          },
+          fontFamily: {
+            sans: ['Verdana', 'sans-serif'],
+            serif: ['Georgia', 'serif']
+          },
+          extend: {
+            colors: {
+              primary: '#ff5733',
+              secondary: '#fffc33'
+            }
+          }
+        },
+      }
     </script>
   </body>
 </html>
