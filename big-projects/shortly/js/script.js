@@ -1,4 +1,4 @@
-const input = document.getElementById('link-input')
+const inputField = document.getElementById('link-input')
 const linkForm = document.getElementById('link-form')
 const errMsg = document.getElementById('err-msg')
 
@@ -21,15 +21,15 @@ function validURL(str) {
 function formSubmit(e) {
   e.preventDefault()
 
-  if (input.value === '') {
+  if (inputField.value === '') {
     errMsg.innerHTML = 'Please enter something'
-    input.classList.add('border-red-900')
-  } else if (!validURL(input.value)) {
+    inputField.classList.add('border-red')
+  } else if (!validURL(inputField.value)) {
     errMsg.innerHTML = 'Please enter a valid URL'
-    input.classList.add('border-red-900')
+    inputField.classList.add('border-red')
   } else {
     errMsg.innerHTML = ''
-    input.classList.remove('border-red-900')
+    inputField.classList.remove('border-red')
     alert('Success')
   }
 }
