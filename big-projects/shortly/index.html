@@ -35,8 +35,27 @@
         <a href="#" class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70">Sign Up</a>
       </div>
       <!-- todo: hamburger menu -->
+      <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
     </div>
     <!-- todo: mobile menu -->
+    <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
+      <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+        <a href="" class="w-full text-center">Features</a>
+        <a href="" class="w-full text-center">Pricing</a>
+        <a href="" class="w-full text-center">Resources</a>
+        <a href="#" class="w-full pt-6 border-t border-gray-400 text-center"
+            >Login</a
+          >
+          <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
+            >Sign Up</a
+          >
+      </div>
+    </div>
   </nav>
   <section id="hero">
     <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
@@ -199,5 +218,67 @@
         </div>
 
   </section>
+  <section id="cta" class="py-24 bg-darkViolet">
+    <div class="flex flex-col p-2 space-y-6">
+      <h5 class="mx-auto space-y-10 text-4xl font-bold text-center text-white">
+        Boost Your Links Today
+      </h5>
+      <button class="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-CyanLight md:text-base md:py-3 focus:outline-none">Get Started</button>
+    </div>
+  </section>
+  <footer class="py-16 bg-veryDarkViolet">
+    <div class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+      <img src="images/logo.svg" alt="">
+      <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+        <!-- menu 1 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Features</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Link Shortening</a>
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Branded Links</a>
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Analytics</a>
+          </div>
+        </div>
+
+        <!-- menu 2 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Resources</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Blog</a>
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Developers</a>
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Support</a>
+          </div>
+        </div>
+
+        <!-- menu 3 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Company</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">About</a>
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Our Team</a>
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Careers</a>
+            <a href="" class="capitalize text-grayishViolet hover:text-cyan">Contact</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- social container -->
+      <div class="flex space-x-6">
+        <a href="">
+          <img src="images/icon-facebook.svg" alt="" class="ficon">
+        </a>
+        <a href="">
+          <img src="images/icon-twitter.svg" alt="" class="ficon">
+        </a>
+        <a href="">
+          <img src="images/icon-pinterest.svg" alt="" class="ficon">
+        </a>
+        <a href="">
+          <img src="images/icon-instagram.svg" alt="" class="ficon">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

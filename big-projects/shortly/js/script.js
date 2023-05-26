@@ -1,8 +1,19 @@
-const inputField = document.getElementById('link-input')
+const btn = document.getElementById('menu-btn')
+const menu = document.getElementById('menu')
+
+const input = document.getElementById('link-input')
 const linkForm = document.getElementById('link-form')
 const errMsg = document.getElementById('err-msg')
 
+btn.addEventListener('click', navToggle)
 linkForm.addEventListener('submit', formSubmit)
+
+// Toggle Mobile Menu
+function navToggle() {
+  btn.classList.toggle('open')
+  menu.classList.toggle('flex')
+  menu.classList.toggle('hidden')
+}
 
 // Validate a URL
 function validURL(str) {
@@ -21,15 +32,15 @@ function validURL(str) {
 function formSubmit(e) {
   e.preventDefault()
 
-  if (inputField.value === '') {
+  if (input.value === '') {
     errMsg.innerHTML = 'Please enter something'
-    inputField.classList.add('border-red')
-  } else if (!validURL(inputField.value)) {
+    input.classList.add('border-red')
+  } else if (!validURL(input.value)) {
     errMsg.innerHTML = 'Please enter a valid URL'
-    inputField.classList.add('border-red')
+    input.classList.add('border-red')
   } else {
     errMsg.innerHTML = ''
-    inputField.classList.remove('border-red')
+    input.classList.remove('border-red')
     alert('Success')
   }
 }
